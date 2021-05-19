@@ -1,457 +1,314 @@
-* {
-    margin: 0px;
-    padding: 0px;
+
+*{
     box-sizing: border-box;
-}
-
-header{
-    background-color: #EAC926;
-}
-
-body{
-    font-family: "Roboto",sans-serif;
-    font-weight: 100;
-    background-color: #ebebeb;
-}
-
-.main-navbar{
-    font-weight: 500;
-}
-
-div.burger-menu{
-    text-align: center;
-}
-
-div.burger-menu i{
-    background-color: #0044AA;
-    border-radius: 5px;
-    color: #FFF;
-    font-size: 20px;
-    margin: 10px 0px 20px 0px;
-    padding: 15px;
-}
-
-main section article img{
-    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 
-main section article{
-    background-color: #fff;
-    margin-bottom: 10px;
-    margin: 15px 0px;
+header {
+    font-family: 'Roboto';
+    font-weight: bold;
+    background-color: #eac926; 
+    font-size : 12px; 
+    padding: 35px;
+   
+
 }
 
-main section article i{
-    display:block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-}   
-
-.main-article{
-    border: 1px solid #ebebeb;
+header section.main-header{
     display: flex;
     flex-wrap: wrap;
-    position: relative;
-    height: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: left;
+    padding: 10px;
+    justify-content: space-between; 
+    
+}
+    
+div.brujula{
+    margin:solid #ebebeb 1px;
+    background-color: white;
+   padding: 5px;
+  width: fit-content;
 }
 
-section.banner img{
-    width: 100%;
+#barraBusqueda{
+    border: 2px solid #ebebeb;
+    width: 50%;
+    display: flex; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: white;
 }
 
-main{
-    width: 100%;
-    padding: 0px 10px;
+header section i{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
 }
 
-h3{
+
+p.manoalineada{
+    display:flex;
+    flex-direction: row-reverse;
+    font-size: 2em;
+    margin-bottom: 10px;
+        width: 50%;
+ 
+
+}
+
+.descripcion{
+    display: initial;
+opacity: 0;
+transition: opacity 0.5;
+font-size: 16px;
+
+}
+
+.descripcion:hover{
+ opacity: 1;
+
+}
+ 
+
+a#titulares{
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 15px;
+  
+}
+
+ 
+h2#titulares{
+    text-align: center;
     font-size: 24px;
 }
-
-div.top-header{
-    padding: 2%;
-}
-
-.logo{
-    width: 100%;
-}
-
-header nav{
-    font-size: 12px;
-}
-
-header ul li{
-    list-style-type: none;
-}
-
-header ul li a{
-    text-decoration: none;
-    color: #000;
-}
-
-p{
-    font-size: 12px;
-}
-
-.search-form{
-    display: flex;
-    align-self: center;
-    width: 50%;
-    justify-content: center;
-}
-
-.campo-busqueda{
-    text-align: center;
-    border: none;
-    padding:8px;
-    width: 75%;
-}
-
-.formulario{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    background-color: grey;
-    max-width: fit-content;
-    margin: auto;
-    border-radius: 15px;
-    font-size: x-large;
-    padding: 15px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-form.formulario-register {
-    background-color: rgb(203, 203, 203);
-    margin-top: 10px;
-    align-items: left;
-}
-
-.perfildeusuario {
-    margin-left: 10px;
-}
-
-main {
-    background-color: white;
-}
-
-input#NombreyApellido,input#Nombredeusuario,input#FechadeNacimiento,input#Domicilio, input#Contraseña, input#ConfirmarContraseña {
-    width: 350px;
-    height: 40px;
-}
-
-div.perfildeusuario {
-    align-items: left;
-}
-
-.register-buttons{
-    align-self:center ;
-}
-
-.send-button{
-    font-size: medium;
-    color: white;
-    background-color: #0044AA;
-    border-radius: 5px;
-    border: solid 0.2px;
-    padding: inherit;
-}
-
-.delete-button{
-    font-size: medium;
-    background-color: white;
-    border-radius: 5px;
-    border: solid 0.2px;
-    padding: inherit;
-}
-
-.control-login{
-    text-align: center;
-    border: none;
-    border-radius: 30px;    
-    padding:7px;
-    background-color: #f5f5f5;
-}
-
-.submitbutton{
-    font-size: medium;
-    background-color: white;
-    border-radius: 5px;
-    border: solid 0.2px;
-    padding: inherit;
-}
-
-main form div{
-    padding: 7px;
-}
-
-.formulario-register{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    max-width: fit-content;
-    margin: auto;
-    border-radius: 15px;
-}
-
-.search-button{
-    border: none;
-    padding: 8px;
-    background-color: white;
-    width:15%;
-}
-
-
-.Precios{
-    font-size: 18px;
-    font-weight: 500;
-    width: 50%;
-    margin-top: 3px;
-    margin-left: 10px;
-    color: black;
-}
-
-.Descuentos{
-    font-size: 16px;
-    color: #39b54a;
-    width: 50%;
-    padding-left: 15px;
-    margin-right: -10px;
-    margin-top: 3px;
-}
-
-.Descripcion{
-    font-size: 16px;
-    display: none;
-    margin-top: 8px;
-    margin-left: 10px;
-}
-
-.fa-address-card{
-    font-weight: bold;
-}
-
-.fa-credit-card{
-    margin: 0px auto;
-}
-
-.last-visit {
-    color: grey;
-}
-
-.fa-truck{
-    color:#39b54a;
-}
-
-.offers{
-    color:grey;
-}
-
-/* footer */
-
-footer{
-    background-color: #FFF;
-    text-align: center;
-}
-
-.CuerpoTxt{
-    font-size: 12px;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    color: grey;
-}
-
-.Ft{
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;   
-}
-
-.fa-credit-card{
-    font-size: 2em;
-    color: blue;
-    margin: 10px auto 10px;
-}
-
-.fa-gift{
-    font-size: 2em;
-    color:blue;
-    margin: 10px auto 10px;
-}
-
-.fa-user-shield{
-    font-size: 2em;
-    color: blue;
-    margin: 10px auto 10px;
-}
-
-.Cp{
-    margin: 10px;
-}
-
-@media (min-width: 361px){
-    .Precios{
-        font-size: 18px;
-        font-weight: 500;
-        width:30%;
-    }
-    
-    .Descuentos{
-        font-size: 16px;
-        color: #39b54a;
-        width:70%;
-    }
-
-    .products{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    main section article{
-        width: auto;
-    }
-
-    .Descripcion{
-            display: none;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .top-header{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    .Logo,.form{
-        width: 50%;
-    }
-
-    header div.top-header h2{
-        width: 100%;
-        text-align: center;
-        margin-top: 10px;
-        padding: 5px;
-    }
-}
-
-@media (min-width: 769px){
-
-    
-    main section article:hover{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
-    div.burger-menu {
-        display: none;
-    }
-
-
-    main section div.products article{
-        width: 22%;
-    }
-
-    .main-navbar{
-        display: flex;
-        justify-content: space-between;
-        padding: 5px;
-    }
-
-    .main-navbar ul{
-        display: flex;
-    }
-
-    .main-navbar li{
-        margin: 0 10px;
-    }
-
-    .top-header{
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    div.Logo{
-        width: 25%;
-    }
-
-    div.form{
-        width: 25%;
-    }
-
-    header div.top-header h2{
-        font-size: 15px;
-        width: 25%;
-        font-weight: lighter;
-        
-    }
-    .Logo{
-        width: 150px;
-    }
-
-    main section article:hover .Descripcion{
-        display: block;
-    }
-
-    main section article i{
-        transition: transform 1000ms;
-    }
-
-    main section article:hover i{
-        transform: rotate(-360deg);
-    }
-
-    .submitbutton:hover{
-        transition: 1000ms;
-        background-color: #9da5c4;
-        color: #ffffff;
-        border: none;
-    }
-
-    .info-footer{
-        display: flex;
-        padding: 10px 10px;
-    }
-
-    .fa-credit-card:hover{
-        transition: 1500ms;
-        color: #1259c3;
-    }
-    
-    .fa-gift:hover{
-        transition: 1500ms;
-        color:#1259c3;
-    }
-    
-    .fa-user-shield:hover{
-        transition: 1500ms;
-        color: #1259c3;
-    }
-
-    }
-
-@media (min-width: 1200px){
-    
-    .products{
+div a#titulares1{
     display: flex;
     flex-direction: row;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;   
+    
+}
+
+section div#alineado{
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: row;
+    
+}
+
+#alineado2{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 15px;
+
+}
+div.burger-menu{
+        color: white;
+        text-align: center;
+        font-size: 1em;
+        background-color: #1259c3;
+        width: 8%;
+        display: flex;
+        margin: auto;
+       
+     }
+     .fas.fa-bars{
+        margin:auto;
+        padding: 5px;
+        }
+    .separacion{
+        margin:10px;
+        
+        text-align: left;
+        padding: 50px;
+       
+     }
+     .separacion:hover{
+        border: 15px solid #ebebeb;
+       
+     }
+
+    main i{
+        text-align: left;
+        width:auto;
+        margin: auto;
+    }
+   
+    
+
+    #precio{
+        font-size: 18px;   
+         display: flex;
+         flex-grow: 1;
+         width: 30%;
+         display: inline;
+         margin-right: 10px;
+   }
+
+#descuento{
+        display: flex;
+       flex-grow: 1;
+       width: 70%;
+       color: #39b54a;
+       display: inline;
+       font-size: 16px;
+}
+img{
+        border-bottom: #ebebeb solid 1px;
+    }
+i.fas.fa-truck{
+        display:block;
+        font-size: 16px;
+        padding: 5px;
+         width: 30px;
+         height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position:relative;
+        left:100px;
+         right: 20px;
+        top: -15px;
+      color:#39b54a;
+      transition: all 1s;     
+}
+main section article i:hover{
+   transform: rotate(-90deg);
+}
+footer{ 
+    
+        text-align: center;
+        line-height: 10px;
+        color: #666;
+        font-size: 13px;
+        margin:auto;
+    
+    }
+    .copyright{font-size: 0.7rem;   
+    }
+footer i{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+   
+}
+main{
+    width: 90%;
+    margin:auto;
+   margin-bottom: 10px;
+}
+.form{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    border: 55px #ebebeb solid;
+    border-radius:inherit;
+    padding:0px 15px ;
+    margin: auto;
+    width: 45%;
+    align-self: center;
+    text-align: center;
+}
+form{
+
+    position: relative;
+    right: 650px;
+    bottom: -20px;
+    
+}
+body button{
+    margin: auto;
+    border-radius: 15px;
+    padding: 3px;
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+form button:hover{
+background-color:#0022AA;
+}
+
+
+@media(max-width:361px){
+   header section.main-header{
+        display: none;
+    }  
+    .descripcion{
+        display: none;
+        
+    }
+.descripcion:hover{
+ opacity: 1;
 
 }
     }
+
+@media(min-width:769px){
+    .separacion{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+}}
+@media(max-width:769px){
+    #barraBusqueda{
+        width: 100%;
+    }
+    #manoalineada{
+        width:100%;
+        font-size: 0.5em;
+    }
+#descripcion{
+    display: none;
+}
+}
+
+@media(min-width:769px){
+    .fas.fa-bars{
+display: none;
+    }
+}
+@media(min-width:769px){
+    footer div.texto{
+display: flex;
+flex-direction: column;
+    }
+}
+@media(min-width:769px){
+    footer div.container{
+display: flex;
+margin: auto;
+flex-direction: row;
+line-height: 15px;
+padding: 15px 35px;
+width: 90%;
+    }
+}
+i.fas.fa-user-shield:hover{
+color:#39b54a;
+}
+i.fas.fa-gift:hover{
+color:#39b54a;
+    }
+i.fas.fa-credit-card:hover{
+        color:#39b54a;
+        }
